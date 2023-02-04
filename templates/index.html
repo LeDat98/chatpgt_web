@@ -1,0 +1,15 @@
+<html>
+<h1> nhập câu hỏi </h1>
+<div>
+<form action = '/' methods = "POST" class = 'form'>
+    <input type='text' name = 'text' required ='required'>
+    <button type='button'>search</button>
+</form>
+</div>
+<div>
+    {% for answer in answers %}
+    <br>{{ answer }}
+    
+    {% endfor %}
+</div>
+</html>
